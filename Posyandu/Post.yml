@@ -1,0 +1,23 @@
+info:
+  name: Post
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: ""
+  body:
+    type: json
+    data: |-
+      {
+        "nama_posyandu": "Melati",
+        "id_kelurahan": 1,
+        "id_puskesmas": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
