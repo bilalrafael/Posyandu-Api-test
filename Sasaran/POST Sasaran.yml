@@ -1,0 +1,26 @@
+info:
+  name: POST Sasaran
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/sasaran
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101019997",
+        "nama": "Adinda Test",
+        "jenis_kelamin": 1,
+        "tanggal_lahir": "2003-05-10",
+        "id_kelurahan": 2,
+        "id_posyandu": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

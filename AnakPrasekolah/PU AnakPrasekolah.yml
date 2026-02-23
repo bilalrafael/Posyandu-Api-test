@@ -1,0 +1,22 @@
+info:
+  name: PU AnakPrasekolah
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8000/api/anak-prasekolah/2
+  body:
+    type: json
+    data: |-
+      {
+        "nama_ortu": "Dennis Yahya",
+        "id_paud": 3
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

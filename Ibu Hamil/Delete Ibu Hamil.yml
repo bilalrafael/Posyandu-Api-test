@@ -1,11 +1,11 @@
 info:
-  name: Delete
+  name: Delete Ibu Hamil
   type: http
   seq: 4
 
 http:
   method: DELETE
-  url: http://localhost:8000/api/posyandu/1
+  url: http://localhost:8000/api/ibu-hamil/3
   auth: inherit
 
 settings:

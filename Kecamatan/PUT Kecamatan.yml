@@ -1,18 +1,16 @@
 info:
-  name: Post
+  name: PUT Kecamatan
   type: http
-  seq: 2
+  seq: 3
 
 http:
-  method: POST
-  url: ""
+  method: PUT
+  url: http://localhost:8000/api/kecamatan/1
   body:
     type: json
     data: |-
       {
-        "nama_posyandu": "Melati",
-        "id_kelurahan": 1,
-        "id_puskesmas": 1
+        "nama_kecamatan": "Kecamatan Bandar"
       }
   auth: inherit
 

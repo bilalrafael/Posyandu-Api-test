@@ -1,0 +1,22 @@
+info:
+  name: POST Remaja Putri
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/remaja-putri
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101019997",
+        "id_sekolah": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

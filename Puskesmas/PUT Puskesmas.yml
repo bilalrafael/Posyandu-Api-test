@@ -1,0 +1,22 @@
+info:
+  name: PUT Puskesmas
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8000/api/puskesmas/2
+  body:
+    type: json
+    data: |-
+      {
+        "nama_puskesmas": "Puskesmas Gampengrejo",
+        "id_kecamatan": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

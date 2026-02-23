@@ -1,7 +1,7 @@
 info:
-  name: Balita
+  name: Sasaran
   type: folder
-  seq: 9
+  seq: 7
 
 request:
   auth: inherit

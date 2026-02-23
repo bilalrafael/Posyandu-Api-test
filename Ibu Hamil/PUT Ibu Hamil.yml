@@ -1,0 +1,26 @@
+info:
+  name: PUT Ibu Hamil
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8000/api/ibu-hamil/3
+  body:
+    type: json
+    data: |-
+      {
+        "nama_suami": "Arya Wahyu",
+        "tanggal_hpht": "2024-01-01",
+        "tanggal_hpl": "2024-10-01",
+        "bb_sebelum_hamil": 75,
+        "imt": 22.5,
+        "lila": 24.0
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

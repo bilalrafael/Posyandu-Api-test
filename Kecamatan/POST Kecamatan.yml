@@ -1,11 +1,17 @@
 info:
-  name: Untitled 2
+  name: POST Kecamatan
   type: http
-  seq: 5
+  seq: 2
 
 http:
-  method: GET
+  method: POST
   url: http://localhost:8000/api/kecamatan
+  body:
+    type: json
+    data: |-
+      {
+        "nama_kecamatan": "Kecamatan Pesantren"
+      }
   auth: inherit
 
 settings:

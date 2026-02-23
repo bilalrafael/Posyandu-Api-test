@@ -1,0 +1,22 @@
+info:
+  name: POST paud
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/paud
+  body:
+    type: json
+    data: |-
+      {
+        "nama_paud": "PAUD Dahlia",
+        "id_kelurahan": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

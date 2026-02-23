@@ -1,17 +1,18 @@
 info:
-  name: post
+  name: POST AnakPrasekolah
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: POST
-  url: http://localhost:8000/api/kelurahan
+  url: http://localhost:8000/api/anak-prasekolah
   body:
     type: json
     data: |-
       {
-      "nama_kelurahan": "Gadungan",
-      "id_kecamatan": 7
+        "nik": "3276010101019988",
+        "nama_ortu": "Dennis Test",
+        "id_paud": 3
       }
   auth: inherit
 

@@ -1,0 +1,23 @@
+info:
+  name: PUT Posyandu
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:8000/api/posyandu/2
+  body:
+    type: json
+    data: |-
+      {
+        "nama_posyandu": "Posyandu Dahlia 2",
+        "id_kelurahan": 2,
+        "id_puskesmas": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: POST Kelurahan
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/kelurahan
+  body:
+    type: json
+    data: |-
+      {
+        "nama_kelurahan" : "Gurah",
+        "id_kecamatan" : 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,17 +1,17 @@
 info:
-  name: post
+  name: POST Balita
   type: http
   seq: 2
 
 http:
   method: POST
-  url: http://localhost:8000/api/sekolah
+  url: http://localhost:8000/api/balita
   body:
     type: json
     data: |-
       {
-        "nama_sekolah": "SMPN 1 Sehat",
-        "id_kelurahan": 1
+        "nik": "3276010101019997",
+        "nama_ortu": "Bilal Test"
       }
   auth: inherit
 

@@ -1,0 +1,27 @@
+info:
+  name: POST Ibu Hamil
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8000/api/ibu-hamil
+  body:
+    type: json
+    data: |-
+      {
+        "nik": "3276010101019997",
+        "nama_suami": "Arya Test",
+        "tanggal_hpht": "2024-01-01",
+        "tanggal_hpl": "2024-10-01",
+        "bb_sebelum_hamil": 70,
+        "imt": 21.5,
+        "lila": 23.5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
